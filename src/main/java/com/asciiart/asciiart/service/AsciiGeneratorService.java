@@ -1,6 +1,8 @@
 package com.asciiart.asciiart.service;
 
+import com.asciiart.asciiart.controller.dto.GenerateTextRequestDto;
+
 public interface AsciiGeneratorService {
 
-    String generateFromText(String text, String character, int size, boolean isOutline);
+    String generateFromText(GenerateTextRequestDto generateTextRequestDto);
 }
