@@ -53,7 +53,7 @@ public class TextGenerator implements Generator<String> {
             StringBuilder stringBuilder = new StringBuilder();
 
             for (int x = 0; x < image.getWidth(); x++) {
-                if (outline)
+                if (!outline)
                     stringBuilder.append(image.getRGB(x, y) == RGB_VALUE ? SPACE_CHAR : character);
                 else
                     stringBuilder.append(image.getRGB(x, y) == RGB_VALUE ? character : SPACE_CHAR);
